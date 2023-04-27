@@ -1,0 +1,19 @@
+seo:
+  site_name: Villa
+  title: Villa
+  description:
+  keywords:
+  social_image:
+  author:
+  favicon_image:
+social:
+  instagram_username:
+  facebook_url:
+  twitter_username:
+design:
+  grey-text_color: '#4a4444'
+  lighte-text_color: '#ffffff'
+  featured-text_color: '#6b8890'
+  featured-text-white_color: '#ffffff'
+  bg-dark_color: '#6b8890'
+  bg-light_color: '#ffffff'

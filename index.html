@@ -1,0 +1,183 @@
+---
+layout: default
+title: Home
+seo:
+   title: Home
+   description:
+   social_image:
+   keywords:
+   hide-from-google: false
+_comments:
+   title: Max 70 characters
+   social_image: landscape 1200 x 600px
+banner:
+   -
+      featured_image: /images/pool-mini.webp
+      title: Minimalism in the heart of<br> Canggu, Bali.
+      description: Scroll down to discover our luxurious villa.
+
+about:
+   -
+      title: ABOUT
+      description_html: >-
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+         incidunt non cumque, adipisci cum, eius expedita corrupti accusamus
+         optio culpa, soluta voluptatibus? Quo animi id quaerat cumque in eius
+         ratione!</p>
+rooms:
+   -
+      bed: 1 king size bed
+      type: Master bedroom
+      image: /images/bedroom.webp
+      icon: /images/bed.png
+   -
+      bed: 1 king size bed
+      type: Guest room
+      image: /images/bedroom-2.webp
+      icon: /images/bed.png
+   -
+      bed: 1 single bed & crib
+      type: Guest room
+      image: /images/single-bed.webp
+      icon: /images/crib.png
+gallery:
+   -
+      title: Dinning
+      paragraphe: >-
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+         repellendus voluptatem amet ab quas est ratione eveniet saepe. Iusto
+         similique ea rem soluta voluptatum quasi officiis laboriosam? Mollitia,
+         dolores unde?
+      gallery_image: /images/dinning-area.webp
+   -
+      title: Living room
+      paragraphe: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil minima odit omnis est a voluptatem molestias voluptatum veniam consectetur. Harum deserunt voluptatibus minus esse suscipit, quidem eligendi distinctio sit! Velit!
+      gallery_image: /images/living-room-2.webp
+icon:
+   -
+      icon: /images/parking.png
+      title: Parking
+      paragraphe: >-
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+         deserunt quo tempore, nemo quae itaque eius, beatae, impedit quam
+         molestiae autem? Quasi quis sapiente a modi, sint sunt aperiam
+         excepturi.
+   -  icon: /images/knife.png
+      title: Breakfast
+      paragraphe: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore, architecto laudantium quae eos fugit pariatur qui consequatur id. Facilis, laudantium. Culpa cum sed dolorem iusto odit quo nostrum dolores.
+   -  icon: /images/pool.png
+      title: Pool
+      paragraphe: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, explicabo sit? Voluptatem, deleniti voluptatibus officia ut tenetur provident molestias unde. Ad quia, omnis excepturi deleniti pariatur quos? At, delectus ipsa!
+---
+<!-------- BODY----->
+
+
+    <!---- About section -->
+<section class="grid grey-text padded">
+    {% for item in page.about %}
+   <div class="col-6_sm-12 bg-image bg-livingromm bg-padded tall-50">
+    </div>
+    <div class="col-6_sm-12 padded">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description_html}}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<!----- Image Banner---->
+<section class=" bg-image bg-loung padded light-text center tall-50 grid editable">
+</section>
+
+<!------------Bedrooms Cards section------->
+
+<section class="grid padded tall-50 grey-text">
+    <div class="col-12 padded center editable">
+        <h2>ROOMS</h2>
+    </div>
+    {% for item in page.rooms %}
+    <div class="col-4_sm-12 padded-1">
+        <img src="{{item.image}}" />
+        <div class="grid">
+            <p class="col-9">{{item.bed}}</p>
+            <div class="col-3 center">
+                <img src="{{item.icon}}" />
+            </div>
+            <h3 class="col-12">{{item.type}}</h3>
+        </div> 
+    </div>   
+    {% endfor %}
+</section>
+
+<!---- Gallery Banner----->
+
+<section class="padded">
+	<div class="capped-width">
+        <h2 class="col-12 center padded">DISCOVER</h2>
+	{% for item in page.gallery %}
+
+	<div class="grid flex-flip-alternate">
+		<div class="col-6_sm-12 bg-image bg-dinning tall-50 bg-padded" style="background-image: url('{{item.gallery_image}}')">
+       	</div>
+       	<div class="col-6_sm-12 padded">
+           	<h2> {{item.title}}</h2>
+            <p>{{item.paragraphe}}</p>
+       	</div>
+   	</div>
+
+   	{% endfor %}
+ 	</div>
+</section>
+
+<!--------------------Amenities section------------------------------------------------>   
+<section class="padded center grey-text">
+    <h2> AMENITIES</h2>
+    <div class="grid padded-1 capped-width-wide ">
+    {% for item in page.icon %}
+      <div class="col-4_sm-12 padded-1  center ">
+            <div>
+                <img src="{{item.icon}}" />
+            </div>
+          <h4>{{item.title}}</h4>
+          <p>{{item.paragraphe}}</p>
+
+      </div>
+      {% endfor %}
+
+      <!---
+      <div class="col-4_sm-12 padded-1 editable center ">
+        <div>
+            <img src="/images/knife.png" />
+        </div>
+      <h4>Breakfast</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde excepturi ipsum eveniet pariatur omnis amet odio, quibusdam repellat vitae ea laudantium cupiditate adipisci iure, facilis nihil voluptate beatae alias consequuntur!</p>
+  </div>
+  <div class="col-4_sm-12 padded-1 editable center ">
+    <div>
+        <img src="/images/pool.png" />
+    </div>
+  <h4>Pool</h4>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde excepturi ipsum eveniet pariatur omnis amet odio, quibusdam repellat vitae ea laudantium cupiditate adipisci iure, facilis nihil voluptate beatae alias consequuntur!</p>
+</div>-->
+      
+    </div>
+  </section>
+
+<!---- Section Social Links---->
+<section class="bg-image bg-dinning padded right grey-text tall-50 grid social-banner">
+    <div class="col-12-middle">
+        <h2>Hit us up on social</h2>
+            <nav>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i>
+
+            </a>
+            <a href="#"><i class="fab fa-facebook-f"></i>
+
+            </a>
+            <a href="#"><i class="fabfa-twitter"></i></a>
+            </nav>
+    </div>
+</section>
+
+
+

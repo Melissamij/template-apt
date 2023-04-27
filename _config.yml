@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-bookshop
+
+bookshop_locations:
+  - component-library
