@@ -1,8 +1,12 @@
 /* 
+colors::
+- #ECE4D2
+- #CCBFA4
+- #889669
+- #373E29
 
-- font-family: 'Raleway', sans-serif;
-- 300 400 500 900 (normal and italic)
 
+Font: poppins 
 */
 
 /* css reset */
@@ -103,11 +107,10 @@ section { position: relative; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
-.bg-dark     { background-color: var(--dark);}
-.bg-featured { background-color: var(--featured);}
-.bg-medium   { background-color: var(--medium); }
-.bg-light    { background-color: var(--light); }
-.bg-v-light  { background-color: var(--v-light); }
+.bg-dark  { background-color: var(--dark);}
+.bg-light { background-color: var(--light);}
+.bg-sand  { background-color: var(--sand); }
+
 
 
 .bg-image {
@@ -175,8 +178,7 @@ section { position: relative; }
     background-color: var(--featured);
     opacity: 0.5;
   } 
-  .bg-featured { background-color: #1C2A2C; }
-  .bg-dark     { background-color: #24282B; }
+
 
 
 /* Typography */
@@ -189,8 +191,13 @@ section { position: relative; }
 .lowercase { text-transform: lowercase;}
 .bold { font-weight: bold;}
 
+
+@font-face {
+    font-family: 'poppins';
+    src: url(Poppins/);
+}
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'poppins';
     color: #4A4444;
 }
 
@@ -226,8 +233,12 @@ p:last-child li:last-child {
     font-size: 0.9rem;
     font-style: italic;
 }
-.light-text { color: white;}
-.grey-text { color: #4A4444;}
+
+.beige-color { color: var(--beige);}
+.sand-color { color: var(--sand);}
+.green-color { color: var(--green);}
+.kaki-color { color: var(--kaki);}
+.body-text { color: var(--body);}
 
 /* buttons & Links */
 a{
@@ -257,8 +268,7 @@ a:hover{
 /* -------------------Header Nav */ 
 .header {
     padding: 10px 16px;
-    background: white;
-    color: #4A4444;
+    background-color: var(--kaki);
     z-index: 1;
   }
 
