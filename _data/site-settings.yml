@@ -11,11 +11,11 @@ social:
   facebook_url:
   twitter_username:
 design:
-  beige-color: '#ECE4D2'
-  sand-color: '#CCBFA4'
-  green-color: '#889669'
-  kaki-color: '#373E29'
-  bg-dark: '#373E29'
-  bg-light: '#CCBFA4'
-  bg-sand: '#CCBFA4'
-  body-text: '#4A4444'
+  beige-color_color: '#ECE4D2'
+  sand-color_color: '#CCBFA4'
+  green-color_color: '#889669'
+  kaki-color_color: '#373E29'
+  bg-dark_color: '#373E29'
+  bg-light_color: '#CCBFA4'
+  bg-sand_color: '#CCBFA4'
+  body-text_color: '#4A4444'

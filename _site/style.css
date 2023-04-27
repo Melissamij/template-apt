@@ -107,7 +107,7 @@ section { position: relative; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
-.kaki-color  { background-color:var(--kaki) ;}
+.bg-dark { background-color:var(--bg-dark) ;}
 .bg-light { background-color: var(--bg-light);}
 .bg-sand  { background-color: var(--bg-sand); }
 
@@ -268,7 +268,7 @@ a:hover{
 /* -------------------Header Nav */ 
 .header {
     padding: 10px 16px;
-    background-color: var(--kaki);
+    background-color: var(--bg-dark);
     z-index: 1;
   }
 
