@@ -269,6 +269,7 @@ a:hover{
 .header {
     padding: 10px 16px;
     background-color: var(--bg-dark);
+    color:var(--bg-light);
     z-index: 1;
   }
 
@@ -289,7 +290,14 @@ a:hover{
 .sticky + .content {
     padding-top: 102px;
   }
+/*------------- banner style -------*/
 
+.text-box {
+  width: 300px;
+  background-color:  #ECE4D2;
+  padding: 50px;
+  margin: 20px;
+}
 /*-------------------- Amenities Section  ------------------------*/
 .big-icon {
     font-size: 2rem;
