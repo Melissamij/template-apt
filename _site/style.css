@@ -107,7 +107,7 @@ section { position: relative; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
-.bg-dark  { background-color: var(--bg-dark);}
+.kaki-color  { background-color:var(--kaki) ;}
 .bg-light { background-color: var(--bg-light);}
 .bg-sand  { background-color: var(--bg-sand); }
 
