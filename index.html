@@ -24,22 +24,7 @@ about:
          incidunt non cumque, adipisci cum, eius expedita corrupti accusamus
          optio culpa, soluta voluptatibus? Quo animi id quaerat cumque in eius
          ratione!</p>
-rooms:
-   -
-      bed: 1 king size bed
-      type: Master bedroom
-      image: /images/bedroom.webp
-      icon: /images/bed.png
-   -
-      bed: 1 king size bed
-      type: Guest room
-      image: /images/bedroom-2.webp
-      icon: /images/bed.png
-   -
-      bed: 1 single bed & crib
-      type: Guest room
-      image: /images/single-bed.webp
-      icon: /images/crib.png
+
 gallery:
    -
       title: Dinning
@@ -73,23 +58,23 @@ icon:
 
 <!--------------- ICON SECTION----------->
 
-<section class="grid bg-sand padded center">
-    <h2> Our Services </h2>
+<section class=" bg-light padded center">
   <div class="grid padded-1">
-    <div class="col-4_sm-12 padded-1">
-      <i class="far fa-building big-icon"></i>
-      <h4> Short Heading </h4>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    <div class="col-3 padded-1">
+      <img src="images/bed.png">
+      <h4> One bedroom <br> One convertible couch</h4>
     </div>
-    <div class="col-4_sm-12 padded-1">
-      <i class="far fa-comment big-icon"></i>
-      <h4> Short Heading </h4>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="col-3 padded-1">
+      <img src="images/knife.png">
+      <h4> Fully equiped kitchen</h4>   
     </div>
-    <div class="col-4_sm-12 padded-1">
-      <i class="far fa-file big-icon"></i>
-      <h4> Short Heading </h4>
-      <p>Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="col-3 padded-1">
+        <img src="images/wifi.png">
+      <h4> Wifi </h4>
+    </div>
+    <div class="col-3 padded-1">
+        <img src="images/heating.png">
+      <h4> Aircon & Heat </h4>
     </div>
   </div>
 
@@ -111,25 +96,6 @@ icon:
 <section class=" bg-image bg-loung padded light-text center tall-50 grid editable">
 </section>
 
-<!------------Bedrooms Cards section------->
-
-<section class="grid padded tall-50 grey-text">
-    <div class="col-12 padded center editable">
-        <h2>ROOMS</h2>
-    </div>
-    {% for item in page.rooms %}
-    <div class="col-4_sm-12 padded-1">
-        <img src="{{item.image}}" />
-        <div class="grid">
-            <p class="col-9">{{item.bed}}</p>
-            <div class="col-3 center">
-                <img src="{{item.icon}}" />
-            </div>
-            <h3 class="col-12">{{item.type}}</h3>
-        </div> 
-    </div>   
-    {% endfor %}
-</section>
 
 <!---- Gallery Banner----->
 
