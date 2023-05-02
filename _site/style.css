@@ -201,12 +201,16 @@ body {
 h1, h2,h3,h4, h5, h6{
     font-weight: 300;
     margin-bottom: 0.5rem;   
-    color: #883618;
 }
 
-h1{ font-size: 8rem;}
-h2{ font-size: 2.5rem;}
-h3{font-size:1.8rem;}
+h1{ 
+    font-size: 8rem;
+    color: #883618;
+}
+h2{ font-size: 2.5rem;
+    color: #883618;}
+h3{font-size:1.8rem;
+    color: #883618;}
 p, ul, li{
     font-weight: 300;
     line-height:1.4;
@@ -234,7 +238,7 @@ p:last-child li:last-child {
 .light-text {color: #E1D5BD;}
 .bg-light { background-color: var(--bg-light);}
 .bg-sand  { background-color: var(--bg-sand); }
-.bg-rose {background-color: var(--bg-rose);}
+.bg-rose { background-color: var(--bg-rose);}
 .bg-dark { background-color:var(--bg-dark) ;}
 
 
@@ -254,6 +258,7 @@ nav a{
 .fab{
     font-size: 1.5rem;
     padding-left: 1rem; 
+    color: var(--featured);
 }
 a:hover{
     color: var(--rose);
@@ -369,6 +374,9 @@ footer p{
   .flex-flip-sm {flex-direction: column-reverse;}
   h1{ font-size: 4rem;}
   footer h2{font-size:3rem;}
+  .sm-style {
+    text-align: top;
+  }
   .social-banner{ 
         min-height: 30vh;}
 }
