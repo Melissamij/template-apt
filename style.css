@@ -201,6 +201,7 @@ body {
 h1, h2,h3,h4, h5, h6{
     font-weight: 300;
     margin-bottom: 0.5rem;   
+    color: #883618;
 }
 
 h1{ font-size: 8rem;}
@@ -230,7 +231,7 @@ p:last-child li:last-child {
     font-size: 0.9rem;
     font-style: italic;
 }
-
+.light-text {color: #E1D5BD;}
 .bg-light { background-color: var(--bg-light);}
 .bg-sand  { background-color: var(--bg-sand); }
 .bg-rose {background-color: var(--bg-rose);}
