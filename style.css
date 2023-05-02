@@ -107,9 +107,6 @@ section { position: relative; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
-.bg-dark { background-color:var(--bg-dark) ;}
-.bg-light { background-color: var(--bg-light);}
-.bg-sand  { background-color: var(--bg-sand); }
 
 
 
@@ -234,10 +231,16 @@ p:last-child li:last-child {
     font-style: italic;
 }
 
-.beige-color { color: var(--beige);}
-.sand-color { color: var(--sand);}
-.green-color { color: var(--green);}
-.kaki-color { color: var(--kaki);}
+.bg-light { background-color: var(--bg-light);}
+.bg-sand  { background-color: var(--bg-sand); }
+.bg-rose {background-color: var(--bg-rose);}
+.bg-dark { background-color:var(--bg-dark) ;}
+
+
+.rose { color: var(--rose);}
+.sand { color: var(--sand);}
+.beige { color: var(--beige);}
+.featured { color: var(--featured);}
 .body-text { color: var(--body);}
 
 /* buttons & Links */
@@ -252,7 +255,7 @@ nav a{
     padding-left: 1rem; 
 }
 a:hover{
-    color: #6b8890;
+    color: var(--rose);
 }
 .button {
     display: inline-block;
@@ -262,14 +265,14 @@ a:hover{
     border: 1px solid;
 }
 .button:hover {
-    color: #6b8890;
+    color: var(--rose);
 }
 
 /* -------------------Header Nav */ 
 .header {
     padding: 10px 16px;
+    color:var(--sand);
     background-color: var(--bg-dark);
-    color:var(--bg-light);
     z-index: 1;
   }
 
@@ -294,7 +297,8 @@ a:hover{
 
 .text-box {
   width: 300px;
-  background-color:  #ECE4D2;
+  background-color: var(--bg-dark);
+  color: #E1D5BD;
   padding: 50px;
   margin: 20px;
 }

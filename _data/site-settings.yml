@@ -11,11 +11,12 @@ social:
   facebook_url:
   twitter_username:
 design:
-  beige-color_color: '#ECE4D2'
-  sand-color_color: '#CCBFA4'
-  green-color_color: '#889669'
-  kaki-color_color: '#373E29'
-  bg-dark_color: '#373E29'
-  bg-light_color: '#ECE4D2'
-  bg-sand_color: '#CCBFA4'
+  rose_color: '#D28D6E'
+  sand_color: '#D48743'
+  beige_color: '#E1D5BD'
+  featured_color: '#883618'
+  bg-light_color: '#E1D5BD'
+  bg-sand_color: '#D48743'
+  bg-rose_color: '#D28D6E'
+  bg-dark_color: '#883618'
   body-text_color: '#4A4444'
